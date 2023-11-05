@@ -145,3 +145,4 @@ app.listen(config.port, () => logger.success('express', `Express server started 
   checkUpdates()
   setInterval(checkUpdates, 1000 * 60 * 60) // hour
 })()
+ 
