@@ -63,6 +63,7 @@ _CC.wishlistManager = new WishlistManager()
 passport.use('local', new LocalStrategy(
   (username, password, done) => {
     username = username.trim()
+    username = username.toLowerCase()
     db.get(username)
       .then(doc => {
         bcrypt.compare(password, doc.password, (err, correct) => {

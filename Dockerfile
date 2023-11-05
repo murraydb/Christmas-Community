@@ -13,7 +13,7 @@ COPY . .
 ENV PORT 80
 ENV DB_EXPOSE_PORT 8080
 EXPOSE 80
-
+EXPOSE 8080
 RUN mkdir -p /data/dbs
 ENV DB_PREFIX /data/dbs/
 
